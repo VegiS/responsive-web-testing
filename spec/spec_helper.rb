@@ -1,12 +1,12 @@
 require 'selenium-webdriver'
 require 'eyes_selenium'
+require_relative '../lib/batch_info'
 
 RSpec.configure do |config|
 
   config.before(:suite) do
-    # Establish a batch handle for the resolution
-    Thread.current[:batch] = Applitools::Base::BatchInfo.new(
-      "#{ENV['viewport_width']}x#{ENV['viewport_height']}")
+    Thread.current[:batch] = Applitools::Base::BatchInfo.new('Responsive Web Batch')
+    Thread.current[:batch].set_id(ENV['batch_id'])
   end
 
   config.before(:each) do |example|
