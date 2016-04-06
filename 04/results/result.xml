@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="4" failures="1" errors="0" time="429.180366" timestamp="2016-04-06T08:11:58-07:00">
+  <!-- Randomized with seed 16245 -->
+  <properties/>
+  <testcase classname="spec.dynamic_loading_spec" name="Dynamic Loading display hidden element" file="./spec/dynamic_loading_spec.rb" time="286.596185">
+    <failure message="RSpec::Core::MultipleExceptionError" type="RSpec::Core::MultipleExceptionError">
+      <![CDATA[Connection reset by peer
+
+Net::ReadTimeout
+]]>
+    </failure>
+  </testcase>
+  <testcase classname="spec.dynamic_loading_spec" name="Dynamic Loading render missing element" file="./spec/dynamic_loading_spec.rb" time="40.025656"/>
+  <testcase classname="spec.login_spec" name="Login with valid credentials" file="./spec/login_spec.rb" time="54.544998"/>
+  <testcase classname="spec.login_spec" name="Login with invalid credentials" file="./spec/login_spec.rb" time="48.012357"/>
+</testsuite>
